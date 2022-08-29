@@ -2,9 +2,11 @@
 
 pragma solidity ^0.8.7;
 
+import "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
+
 error Raffle__Enough();
 
-contract Raffle {
+contract Raffle is VRFConsumerBaseV2 {
     uint256 private immutable i_entranceFee;
 
     address payable[] private s_players;
@@ -24,6 +26,10 @@ contract Raffle {
         // emit event
         emit Raffleenter(msg.sender);
     }
+
+    function requestRandomNumber() external {}
+
+    function fufillRandomNumber(uint256 requestId, unit256[] memory randomWords) internal virtual {}
 
     function pickRandomWinner() public {}
 
