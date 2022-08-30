@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/mnt/c/Users/TB's PC/Desktop/PROGRAMMING/LEARNING/fullstack-lottery/server/contracts/Raffle.sol": {
-      "lastModificationDate": 1661783036746,
-      "contentHash": "77e19e034e917194f85760f59090d348",
+      "lastModificationDate": 1661897432727,
+      "contentHash": "8778c8d43901b5b64e1e387eaed00555",
       "sourceName": "contracts/Raffle.sol",
       "solcConfig": {
         "version": "0.8.9",
@@ -36,8 +36,9 @@
         }
       },
       "imports": [
+        "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol",
         "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol",
-        "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol"
+        "@chainlink/contracts/src/v0.8/interfaces/KeeperCompatibleInterface.sol"
       ],
       "versionPragmas": [
         "^0.8.7"
@@ -128,6 +129,90 @@
       ],
       "artifacts": [
         "VRFCoordinatorV2Interface"
+      ]
+    },
+    "/mnt/c/Users/TB's PC/Desktop/PROGRAMMING/LEARNING/fullstack-lottery/server/node_modules/@chainlink/contracts/src/v0.8/interfaces/KeeperCompatibleInterface.sol": {
+      "lastModificationDate": 1661772117714,
+      "contentHash": "bdbf3e274e50272d9c830fa414fcbec9",
+      "sourceName": "@chainlink/contracts/src/v0.8/interfaces/KeeperCompatibleInterface.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "KeeperCompatibleInterface"
+      ]
+    },
+    "/mnt/c/Users/TB's PC/Desktop/PROGRAMMING/LEARNING/fullstack-lottery/server/contracts/Todo.sol": {
+      "lastModificationDate": 1661890272024,
+      "contentHash": "842712bfbee561d0f7df7f451926aaa3",
+      "sourceName": "contracts/Todo.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Todo"
       ]
     }
   }
