@@ -6,7 +6,6 @@ const { developmentChains, networkConfig } = require("../../helper-hardhat-confi
     ? describe.skip
     : describe("Raffle Unit Tests", function () {
           let raffle, raffleContract, vrfCoordinatorV2Mock, raffleEntranceFee, interval, player // , deployer
-
           beforeEach(async () => {
               accounts = await ethers.getSigners() // could also do with getNamedAccounts
               //   deployer = accounts[0]
