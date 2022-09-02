@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
+import LotteryEnrance from "../components/LotteryEnrance";
 import ManualHeader from "../components/ManualHeader";
 import styles from "../styles/Home.module.css";
 
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       {/* <ManualHeader /> */}
       <Header />
+      <LotteryEnrance />
     </div>
   );
 }
