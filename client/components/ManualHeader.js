@@ -7,9 +7,9 @@ import { useMoralis } from "react-moralis";
 export default function ManualHeader() {
   const {
     enableWeb3,
-    isWeb3Enabled,
+    isWeb3Enabled, // checks if it is connected
     isWeb3EnableLoading,
-    account,
+    account, // checks there is an account connected
     Moralis,
     deactivateWeb3,
   } = useMoralis();
