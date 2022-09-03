@@ -9,7 +9,8 @@ const LotteryEnrance = () => {
   const [numPlayers, setNumPlayers] = useState("");
   const [recentWinner, setRecentWinner] = useState("");
   const { chainId: chainIdHex, isWeb3Enabled } = useMoralis();
-  const chainId = parseInt(chainIdHex); // 0x4 <------- mEANS the hex chainId version
+  const chainId = parseInt(chainIdHex);
+  console.log(chainId); // 0x4 <------- mEANS the hex chainId version
   const raffleAddress =
     chainId in contractAddresses ? contractAddresses[chainId][0] : null;
   const dispatch = useNotification();
@@ -51,9 +52,9 @@ const LotteryEnrance = () => {
   });
 
   async function UpdateUi() {
-    const EntranceFee = (await getInterval()).toString();
-    const numPlayerFromCall = (await getNumberOfPlayers()).toString();
-    const recentWinnerfromcall = (await getRecentWinner()).toString();
+    const EntranceFee = (await getInterval())?.toString();
+    const numPlayerFromCall = (await getNumberOfPlayers())?.toString();
+    const recentWinnerfromcall = (await getRecentWinner())?.toString();
     setEntranceFee(EntranceFee);
     setNumPlayers(numPlayerFromCall);
     setRecentWinner(recentWinnerfromcall);
